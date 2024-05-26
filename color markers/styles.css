@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	place-content: center;
+}
+h1 {
+	text-align: center;
+}
+.markers {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.red-marker,
+.blue-marker,
+.green-marker {
+	border: 1px solid;
+	height: 3rem;
+	width: 20rem;
+	display: flex;
+	flex-basis: 1;
+}
+.head {
+	flex: 20%;
+}
+.body {
+	flex: 70%;
+	border-left: 0.5rem double black;
+	background-color: white;
+	opacity: 0.5;
+}
+.tail {
+	flex: 10%;
+}
+
+.red-marker {
+	background: linear-gradient(
+		rgb(122, 74, 14),
+		rgb(245, 62, 113),
+		rgb(162, 27, 27)
+	);
+	box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green-marker {
+	background: linear-gradient(#55680d, #71f53e, #116c31);
+	box-shadow: 0 0 20px 0 #3b7e20cc;
+}
+
+.blue-marker {
+	background: linear-gradient(
+		hsl(186, 76%, 16%),
+		hsl(223, 90%, 60%),
+		hsl(240, 56%, 42%)
+	);
+	box-shadow: 0 0 20px 0 blue;
+}
