@@ -12,16 +12,34 @@
 			<p>Please fill out this form with the required information</p>
 		</header>
 		<main>
-			<form>
+			<form method="post">
 				<fieldset>
 					<label for="first-name">Enter Your First Name</label>
-					<input type="text" name="first-name" id="first-name" required />
+					<input
+						type="text"
+						name="first-name"
+						id="first-name"
+						minlength="5"
+						required
+					/>
 					<label for="last-name">Enter Your Last Name</label>
-					<input type="text" name="last-name" id="last-name" required />
+					<input
+						type="text"
+						name="last-name"
+						id="last-name"
+						minlength="5"
+						required
+					/>
 					<label for="email">Enter Your Email</label>
 					<input type="email" name="email" id="email" required />
 					<label for="password">Password</label>
-					<input type="password" name="password" id="password" required />
+					<input
+						type="password"
+						name="password"
+						id="password"
+						pattern="[A-Za-z0-9]{8,}"
+						required
+					/>
 				</fieldset>
 				<fieldset class="account-type">
 					<legend>Account type (required)</legend>
@@ -41,11 +59,12 @@
 						name="profile-pic"
 						id="profile-pic"
 						accept="image/png, image/jpeg"
+						required
 					/>
 					<label for="age">Input Your Age (years)</label>
-					<input type="number" name="age" id="age" />
+					<input type="number" name="age" id="age" required />
 					<label for="referrer">How did you hear about us?</label>
-					<select id="referrer" name="referrer">
+					<select id="referrer" name="referrer" required>
 						<option value="">(select one)</option>
 						<option value="1">freeCodeCamp News</option>
 						<option value="2">freeCodeCamp YouTube Channel</option>
@@ -57,6 +76,9 @@
 						name="bio"
 						id="bio"
 						placeholder="I like coding on the beach..."
+						minlength="10"
+						maxlength="120"
+						required
 					></textarea>
 				</fieldset>
 				<div class="terms-and-conditions">
@@ -64,6 +86,7 @@
 						type="checkbox"
 						name="terms-and-conditions"
 						id="terms-and-conditions"
+						required
 					/>
 					<label for="terms-and-conditions">
 						I accept the
