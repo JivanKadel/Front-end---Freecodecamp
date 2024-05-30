@@ -1,0 +1,70 @@
+:root {
+	font-size: 16px;
+}
+* {
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+	display: grid;
+	place-content: center;
+}
+main {
+	margin-top: 2rem;
+	max-width: 300px;
+	border: 2px solid black;
+	padding: 0 0.5rem;
+}
+main * {
+	padding: 0;
+	margin-top: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+/* common classes */
+.bold {
+	font-weight: bold;
+}
+.extra-bold {
+	font-weight: bolder;
+}
+.space-between {
+	display: flex;
+	justify-content: space-between;
+}
+.padding-left {
+	padding-left: 0.7rem;
+}
+.border-bottom-10 {
+	border-bottom: 10px solid black;
+}
+.border-bottom-5 {
+	border-bottom: 5px solid black;
+}
+.border-bottom-1 {
+	border-bottom: 1px solid black;
+}
+/* starting from the title */
+
+.title {
+	font-size: 1.8rem;
+	font-weight: bolder;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1px;
+}
+
+p.calories-count {
+	font-weight: bolder;
+	margin-top: -0.2rem;
+	margin-bottom: -0.4rem;
+}
+.calories {
+	font-size: 2rem;
+}
+.calories-amount {
+	font-size: 2.3rem;
+}
+
+.note > .small {
+	font-size: 0.7rem;
+}
